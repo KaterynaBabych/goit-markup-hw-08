@@ -1,0 +1,209 @@
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal__dialog {
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+
+    background-color: $heroTextColor;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal__is-hidden & {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+.modal__icon-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        fill: $acentColor;
+    }
+}
+
+.modal__icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    background-color: $heroTextColor;
+}
+
+/* Форма модалки */
+.modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    margin: 0 0 10px 0;
+    color: $titleTextColor;
+    text-align: center;
+}
+
+.modal__form {
+    margin: 0;
+    padding: 0;
+}
+
+.modal__field {
+    margin-bottom: 8px;
+}
+
+.modal__label {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.modal__input {
+    position: relative;
+}
+
+.modal__input:focus-within>.modal__input-icon {
+    border: 1px solid $acentColor;
+}
+
+.modal__pic {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.modal__input-icon {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+
+    .modal__input:focus-within>& {
+        border: 1px solid $acentColor;
+    }
+}
+
+.modal__input-icon:focus+.modal__input-pic {
+    fill: $acentColor;
+}
+
+.modal__textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    outline: none;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    .modal__label:focus-within>& {
+        border: 1px solid $acentColor;
+    }
+
+    &:focus {
+        border: 1px solid $acentColor;
+    }
+}
+
+.modal__checkbox {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.modal__checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__checkbox-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.modal__checkbox-mark {
+    display: inline-block;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $titleTextColor;
+    border-radius: 4px;
+}
+
+.modal__checkbox-input:checked+.modal__checkbox-mark {
+    background-color: $acentColor;
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-color: $acentColor;
+    background-origin: border-box;
+}
+
+.modal__link {
+    color: $acentColor;
+    text-decoration: underline;
+    padding-left: 2px;
+}
+
+.modal__button {
+    width: 200px;
+    height: 50px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+    background-color: rgba(24, 140, 232, 1);
+}
+}
+

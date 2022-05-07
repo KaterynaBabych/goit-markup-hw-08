@@ -1,0 +1,40 @@
+.plus__section {
+    padding-top: 94px;
+    padding-bottom: 93px;
+}
+
+.plus__text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.plus__item {
+    display: flex;
+}
+
+.plus__list {
+    width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.plus__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $buttonFonColor;
+}
+
+.plus__title {
+    color: $titleTextColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 0;
+    margin-bottom: 10px;
+}

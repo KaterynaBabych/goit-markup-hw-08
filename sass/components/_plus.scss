@@ -1,6 +1,11 @@
 .plus__section {
-    padding-top: 94px;
-    padding-bottom: 93px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 93px;
+    }
 }
 
 .plus__text {
@@ -9,25 +14,46 @@
 }
 
 .plus__item {
-    display: flex;
+    display: block;
+    
+    @media screen and (min-width: 768px) {
+     display: flex;
+    flex-wrap: wrap;
+    }
 }
 
 .plus__list {
-    width: 270px;
+    width: 450px;
+    margin-bottom: 30px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+
+        &:not(:nth-child(2n)) {
+                margin-right: 30px;
+            }
     }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }   
 }
+ 
 
 .plus__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     background-color: $buttonFonColor;
+
+    
 }
 
 .plus__title {
@@ -35,6 +61,11 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;        
+    }
 }

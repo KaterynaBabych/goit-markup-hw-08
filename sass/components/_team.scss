@@ -1,26 +1,59 @@
 .team__section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $buttonFonColor;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .team__main {
-    display: flex;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+     display: flex;   
+     flex-wrap: wrap;
+    }
 }
 
 .team__item {
-    width: calc((100% - 3 * 30px) / 4);
+width: 450px;
+
+&:not(:last-child) {
+    margin-bottom: 30px;
+}
+margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+       &:nth-last-child(-n+2) {
+           margin-bottom: 0;
+       }
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 3 * 30px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 
         &:not(:last-child) {
-            margin-right: 30px;}
-}
+            margin-right: 30px;
+        }   
+        margin-bottom: 0;
+    }
+   }
 
 .team__card {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     background-color: $heroTextColor;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+    }
 }
 
 .team__title {
@@ -45,10 +78,19 @@
 .team__icon {
     display: flex;
     justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 122px;
+    padding-right: 122px;
     list-style: none;
     outline: 1px solid red;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 .team__social {

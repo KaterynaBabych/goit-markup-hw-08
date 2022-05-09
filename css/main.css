@@ -18,6 +18,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  outline: 1px solid blue;
 }
 
 a {
@@ -44,8 +45,25 @@ address {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
   outline: 1px solid tomato;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section__title-none {
@@ -64,12 +82,20 @@ address {
 
 .section__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+  }
 }
 
 .main-nav {
@@ -356,13 +382,21 @@ address {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(../images/hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
 }
 
 .hero__title {
@@ -370,9 +404,16 @@ address {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 /* кнопка Hero*/
@@ -614,8 +655,15 @@ address {
 }
 
 .plus__section {
-  padding-top: 94px;
-  padding-bottom: 93px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .plus__section {
+    padding-top: 94px;
+    padding-bottom: 93px;
+  }
 }
 
 .plus__text {
@@ -624,17 +672,40 @@ address {
 }
 
 .plus__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .plus__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .plus__list {
-  width: 270px;
+  width: 450px;
+  margin-bottom: 30px;
 }
 
-.plus__list:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .plus__list {
+    width: 354px;
+  }
+  .plus__list:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .plus__list {
+    width: 270px;
+  }
+  .plus__list:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .plus__icon {
@@ -647,7 +718,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -658,12 +729,25 @@ address {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .plus__title {
+    text-align: left;
+  }
+}
+
 .work__section {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .work__section {
+    display: none;
+  }
 }
 
 .work__list {
@@ -706,31 +790,75 @@ address {
 }
 
 .team__section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 1200px) {
+  .team__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .team__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .team__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .team__item {
-  width: calc((100% - 3 * 30px) / 4);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 450px;
+  margin-bottom: 30px;
 }
 
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+  .team__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .team__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 3 * 30px) / 4);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+  }
+  .team__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__card {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__card {
+    padding-bottom: 30px;
+  }
 }
 
 .team__title {
@@ -759,10 +887,24 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 122px;
+  padding-right: 122px;
   list-style: none;
   outline: 1px solid red;
+}
+
+@media screen and (min-width: 768px) {
+  .team__icon {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__icon {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .team__social {
@@ -790,17 +932,31 @@ address {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .clients__card {
@@ -824,8 +980,9 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
+  margin-bottom: 30px;
   border: 1px solid #afb1b8;
   border-radius: 2px;
   fill: #afb1b8;
@@ -833,9 +990,26 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients__log:not(:nth-last-child(2n + 1)) {
+  margin-right: 30px;
+}
+
 .clients__log:hover, .clients__log:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__log {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__log {
+    width: 170px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__nav {
@@ -845,9 +1019,19 @@ address {
 }
 
 .footer__contact {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.footer__mobile {
+  margin: 0 auto;
 }
 
 .logo__footer {
@@ -860,7 +1044,14 @@ address {
 }
 
 .adress__navigator {
-  padding-right: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .adress__navigator {
+    padding-right: 70px;
+  }
 }
 
 .adress__nav {

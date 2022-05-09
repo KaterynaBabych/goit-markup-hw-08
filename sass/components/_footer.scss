@@ -5,9 +5,20 @@
 }
 
 .footer__contact {
-    display: inline-flex;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+    display: inline-flex;    
+    }
+    
 }
+
+.footer__mobile {
+    margin: 0 auto;
+}
+
 .logo__footer {
+
     color: $heroTextColor;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -17,7 +28,13 @@
 }
 
 .adress__navigator {
-    padding-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        padding-right: 70px;
+    }
+    
 }
 
 .adress__nav {

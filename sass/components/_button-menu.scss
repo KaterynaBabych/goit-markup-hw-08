@@ -1,3 +1,15 @@
 .button-menu {
     border: none;
     background-color: transparent;
+
+    &.is-open .icon-menu-close {
+        display: block;
+    }
+    &.is-open .icon-menu {
+        display: none;
+    }
+}
+
+.icon-menu-close {
+    display: none;
+}

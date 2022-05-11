@@ -124,6 +124,15 @@ address {
   line-height: 1.38;
 }
 
+.menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* site nav */
 .site-nav {
   display: -webkit-box;
@@ -263,6 +272,15 @@ address {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.38;
+}
+
+.menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* site nav */
@@ -686,8 +704,9 @@ address {
 }
 
 .plus__list {
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -804,6 +823,7 @@ address {
 
 .team__main {
   display: block;
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -817,11 +837,8 @@ address {
 }
 
 .team__item {
-  width: 450px;
-  margin-bottom: 30px;
-}
-
-.team__item:not(:last-child) {
+  max-width: 450px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -829,11 +846,8 @@ address {
   .team__item {
     width: 354px;
   }
-  .team__item:not(:nth-child(2n)) {
+  .team__item:nth-child(odd) {
     margin-right: 30px;
-  }
-  .team__item:nth-last-child(-n+2) {
-    margin-bottom: 0;
   }
 }
 
@@ -842,7 +856,9 @@ address {
     width: calc((100% - 3 * 30px) / 4);
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    margin-bottom: 0;
+  }
+  .team__item:nth-child(odd) {
+    margin-right: 0;
   }
   .team__item:not(:last-child) {
     margin-right: 30px;
@@ -890,6 +906,7 @@ address {
   padding-left: 122px;
   padding-right: 122px;
   list-style: none;
+  width: 100%;
   outline: 1px solid red;
 }
 
@@ -949,6 +966,7 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -966,8 +984,30 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
   padding: 0;
+  margin-bottom: 30px;
+}
+
+.clients__card:nth-child(odd) {
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__card:nth-child(odd) {
+    margin-right: 0;
+  }
+  .clients__card:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__card:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+  .clients__card:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__log {
@@ -982,16 +1022,11 @@ address {
           justify-content: center;
   width: 210px;
   height: 92px;
-  margin-bottom: 30px;
   border: 1px solid #afb1b8;
   border-radius: 2px;
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__log:not(:nth-last-child(2n + 1)) {
-  margin-right: 30px;
 }
 
 .clients__log:hover, .clients__log:focus {
@@ -1318,5 +1353,10 @@ address {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.button-menu {
+  border: none;
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

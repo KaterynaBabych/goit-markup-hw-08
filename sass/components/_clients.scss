@@ -1,16 +1,17 @@
 .clients {
     padding-top: 60px;
     padding-bottom: 60px;
-
+    
     @media screen and (min-width: 1200px) {
-            padding-top: 94px;
-            padding-bottom: 94px;
-        }
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .clients__title {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -30px;
 
     @media screen and (min-width: 1200px) {
        justify-content: space-between;
@@ -21,8 +22,30 @@
 .clients__card {
     display: inline-flex;
     justify-content: space-between;
-    margin: 0;
+    
     padding: 0;
+  
+    margin-bottom: 30px;
+    &:nth-child(odd) {
+        margin-right: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        &:nth-child(odd) {
+            margin-right: 0;
+        }  
+        &:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &:not(:nth-child(3n)) {
+            margin-right: 0;
+        }
+        &:not(:last-child){
+          margin-right: 30px;
+         }
+    }
 }
 
 .clients__log {
@@ -32,23 +55,7 @@
     width: 210px;
     height: 92px;
 
-    margin-bottom: 30px;
-
-&:not(:nth-last-child(2n + 1)) {
-    margin-right: 30px;
-}
-    // &:not(:nth-last-child(-n + 3)) {
-    //     margin-left: 30px;
-    // }
-
-    // &:not(:nth-child(3n)) {
-    //     margin-right: 30px;
-    // }
-
-    // &:nth-last-child(even) {
-    //  margin-left: 30px;   
-    // }  
-
+   
     border: 1px solid $iconColor;
     border-radius: 2px;
     fill: $iconColor;

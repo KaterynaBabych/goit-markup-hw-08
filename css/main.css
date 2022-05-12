@@ -1465,8 +1465,28 @@ address {
   padding-bottom: 60px;
 }
 
-.footer__contact {
-  display: block;
+@media screen and (max-width: 767px) {
+  .footer__contact {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1477,8 +1497,15 @@ address {
   }
 }
 
-.footer__mobile {
-  margin: 0 auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    justify-items: center;
+  }
 }
 
 .logo__footer {
@@ -1490,9 +1517,22 @@ address {
   padding-bottom: 20px;
 }
 
-.adress__navigator {
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo__footer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .adress__navigator {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .adress__navigator {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1502,7 +1542,13 @@ address {
 }
 
 .adress__nav {
-  padding-bottom: 9px;
+  padding-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .adress__nav {
+    padding-bottom: 9px;
+  }
 }
 
 .adress__map {
@@ -1540,10 +1586,22 @@ address {
   padding-top: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-network__title {
+    text-align: center;
+  }
+}
+
 .social-network__icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+@media screen and (max-width: 767px) {
+  .social-network__icon {
+    margin-bottom: 60px;
+  }
 }
 
 .social-network__list:not(:last-child) {
@@ -1576,21 +1634,42 @@ address {
   fill: #ffffff;
 }
 
-.form-footer {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-footer__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .form-footer__input {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 358px;
+  width: 450px;
   height: 50px;
   border-radius: 4px;
   padding-left: 16px;
+  margin-bottom: 20px;
   background-color: #2f303a;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer__input {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 358px;
+  }
 }
 
 .form-footer__button {
@@ -1610,6 +1689,13 @@ address {
   letter-spacing: 0.06em;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-footer__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .form-footer__icon {
   position: absolute;
   top: 50%;
@@ -1620,6 +1706,23 @@ address {
           align-items: center;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.social-network__title-form {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  padding-bottom: 20px;
+  margin: 0;
+  padding-top: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-network__title-form {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 .portfolio-main {

@@ -13,16 +13,22 @@
     color: $acentColor;
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.17;
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
 }
 
 .logo__header {
     color: $titleTextColor;
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.38;
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
 }
 // menu-nav
 .menu-nav {
@@ -41,7 +47,7 @@
     @media screen and (max-width: 767px) {
     position: absolute;
   
-    top: 100%;
+    top: 0%;
     left: 0%;
     width: 100%; 
 
@@ -169,7 +175,7 @@ letter-spacing: 0.02em;
 display: flex;
     color: $primaryTextColor;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

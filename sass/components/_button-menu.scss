@@ -4,6 +4,7 @@
     right: 0;
     border: none;
     background-color: transparent;
+    z-index: 950;
 
     &.is-open .icon-menu-close {
         display: block;
@@ -12,13 +13,7 @@
         display: none;
     }
 
-    &.is-open .logo__basic {
-        display: none;
-    }
-    &.is-open .logo__header {
-        display: none;
-    }
-
+ 
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -31,8 +26,9 @@
     &:focus .icon-menu {
         fill: $acentColor;
     }
+    .icon-menu-close {
+    display: none;
+    
+}
 }
 
-.icon-menu-close {
-    display: none;
-}

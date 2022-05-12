@@ -77,7 +77,7 @@
         }
 }
     @media screen and (min-width: 1200px) {
-      
+      max-width: 100%;
         &:not(:nth-child(3n)) {
             width: calc((100% - 60px) / 3);
             margin-right: 30px;

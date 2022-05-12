@@ -6,14 +6,19 @@
     background-color: transparent;
     z-index: 950;
 
-    &.is-open .icon-menu-close {
-        display: block;
-    }
-    &.is-open .icon-menu {
-        display: none;
-    }
+    // &.is-open .icon-menu-close {
+    //     display: block;
+    // }
+    // &.is-open .icon-menu {
+    //     display: none;
+    // }
+&.is-open .icon-menu-close {
+    display: none;
+}
 
- 
+&.is-open .icon-menu {
+    display: inline-block;
+}
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -26,9 +31,11 @@
     &:focus .icon-menu {
         fill: $acentColor;
     }
-    .icon-menu-close {
-    display: none;
-    
-}
+    // .icon-menu-close {
+    // display: none;
+    // }
+         .icon-menu {
+             display: none;
+         }
 }
 

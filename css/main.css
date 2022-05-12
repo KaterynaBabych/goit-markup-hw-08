@@ -152,25 +152,16 @@ address {
 .menu-nav {
   display: none;
   z-index: 900;
-  padding: 40px 48px;
 }
 
 .menu-nav.is-open {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-nav.is-open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .menu-nav {
     position: absolute;
+    padding: 40px 48px;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -490,25 +481,16 @@ address {
 .menu-nav {
   display: none;
   z-index: 900;
-  padding: 40px 48px;
 }
 
 .menu-nav.is-open {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-nav.is-open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .menu-nav {
     position: absolute;
+    padding: 40px 48px;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -792,63 +774,63 @@ address {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 479px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(/images/Hero_mobile.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(/images/Hero_mobile.jpg);
   }
 }
 
-@media screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 499px) and (min-resolution: 192dpi) {
+@media screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(/images/Hero_mobile@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(/images/Hero_mobile@2x.jpg);
   }
 }
 
-@media screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 499px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(/images/Hero_mobile@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(/images/Hero_mobile@2x.jpg);
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 899px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(/images/Hero_tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(/images/Hero_tablet.jpg);
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 500px) and (max-width: 899px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(/images/Hero_tablet@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(/images/Hero_tablet@2x.jpg);
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 500px) and (max-width: 899px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(/images/Hero_tablet@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(/images/Hero_tablet@2x.jpg);
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(/images/Hero_desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(/images/Hero_desktop.jpg);
   }
 }
 
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(/images/Hero_desktop@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(/images/Hero_desktop@2x.jpg);
   }
 }
 
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(/images/Hero_desktop@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(/images/Hero_desktop@2x.jpg);
@@ -2009,11 +1991,11 @@ address {
 }
 
 .button-menu.is-open .icon-menu-close {
-  display: block;
+  display: none;
 }
 
 .button-menu.is-open .icon-menu {
-  display: none;
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
@@ -2032,7 +2014,7 @@ address {
   fill: #2196f3;
 }
 
-.button-menu .icon-menu-close {
+.button-menu .icon-menu {
   display: none;
 }
 /*# sourceMappingURL=main.css.map */

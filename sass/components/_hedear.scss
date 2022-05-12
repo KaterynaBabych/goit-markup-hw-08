@@ -34,19 +34,14 @@
 .menu-nav {
     display: none;
     z-index: 900;
-    padding: 40px 48px;
 
     &.is-open {
         display: block;
-        @media screen and (min-width: 768px) {
-            display: flex;
-            padding: 0;
-        }
     }
 
     @media screen and (max-width: 767px) {
     position: absolute;
-  
+    padding: 40px 48px;
     top: 0%;
     left: 0%;
     width: 100%; 

@@ -1,7 +1,12 @@
 .main-nav {
+   display: block;
+    
+    border-bottom: 1px solid #ececec;
+
+    @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ececec;
+    }
 }
 
 .logo__basic {
@@ -21,18 +26,45 @@
 }
 // menu-nav
 .menu-nav {
-    display: flex;
-    align-items: center;
+
+display: none;
+
+    @media screen and (max-width: 767px) {
+    position: absolute;
+  
+
+    top: 100%;
+    left: 0%;
+    width: 100%; 
+
+    background-color: $heroTextColor;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center; 
+    }
+   
+    &.is-open {
+        display: block;
+    }
 }
 
 /* site nav */
 .site-nav {
-    display: flex;
-    margin-left: 93px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+display: block;
+margin-left: auto;
+margin-right: auto;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+    @media screen and (min-width: 768px) {
+         display: flex;
+        margin-left: 93px; 
+    }
+   
 }
 
 .site-nav__item {
@@ -76,12 +108,22 @@
 
 /* contacts-nav*/
 .contacts-nav {
-    display: flex;
-    margin-left: auto;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+display: block;
+margin-left: auto;
+margin-right: auto;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: auto;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+  
 
     &__item:not(:last-child) {
         margin-right: 50px;
@@ -89,15 +131,19 @@
 }
 
 .contacts-nav__mail {
-    display: flex;
-    align-items: center;
+display: block;
     color: $primaryTextColor;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        
+    }
     &:hover,
     &:focus {
         color: $acentColor;

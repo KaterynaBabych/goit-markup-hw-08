@@ -1,4 +1,7 @@
 .button-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
     border: none;
     background-color: transparent;
 
@@ -7,6 +10,19 @@
     }
     &.is-open .icon-menu {
         display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    &:hover .icon-menu-close,
+    &:focus .icon-menu-close {
+        fill: $acentColor;
+    }
+
+    &:hover .icon-menu,
+    &:focus .icon-menu {
+        fill: $acentColor;
     }
 }
 

@@ -12,6 +12,13 @@
         display: none;
     }
 
+    &.is-open .logo__basic {
+        display: none;
+    }
+    &.is-open .logo__header {
+        display: none;
+    }
+
     @media screen and (min-width: 768px) {
         display: none;
     }

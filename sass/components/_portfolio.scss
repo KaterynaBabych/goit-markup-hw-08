@@ -1,5 +1,9 @@
 .portfolio-main {
-    padding: 94px 0;
+padding: 60px 0;
+
+   @media screen and (min-width: 1200px) {
+   padding: 94px 0;    
+} 
 }
 
 /* Кнопки фильтры */
@@ -67,9 +71,9 @@
     @media screen and (max-width: 1199px) {
         margin-bottom: 30px;
     }
-    @media screen and (min-width: 480px) {
-        max-width: 450px;
-    }
+    // @media screen and (min-width: 480px) {
+    //     max-width: 450px;
+    // }
     @media screen and (min-width: 768px) {
         max-width: 354px;
         &:nth-child(odd) {
@@ -77,7 +81,7 @@
         }
 }
     @media screen and (min-width: 1200px) {
-      max-width: 100%;
+    //   max-width: 100%;
         &:not(:nth-child(3n)) {
             width: calc((100% - 60px) / 3);
             margin-right: 30px;
@@ -140,7 +144,7 @@
     margin-top: 0;
     color: $titleTextColor;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }

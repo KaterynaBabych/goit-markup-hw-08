@@ -1786,7 +1786,13 @@ address {
 }
 
 .portfolio-main {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-main {
+    padding: 94px 0;
+  }
 }
 
 /* Кнопки фильтры */
@@ -1868,12 +1874,6 @@ address {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .portfolio__card {
-    max-width: 450px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .portfolio__card {
     max-width: 354px;
@@ -1884,9 +1884,6 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio__card {
-    max-width: 100%;
-  }
   .portfolio__card:not(:nth-child(3n)) {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
@@ -1960,7 +1957,7 @@ address {
   margin-top: 0;
   color: #212121;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }

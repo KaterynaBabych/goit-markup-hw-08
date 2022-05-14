@@ -23,13 +23,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
 }
 body.modal-open {
   overflow: hidden;
 }
 
 a {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
 }
 img {

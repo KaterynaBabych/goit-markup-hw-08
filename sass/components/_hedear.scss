@@ -1,17 +1,22 @@
+.header {
+    border-bottom: 1px solid #ececec;
+  
+}
 .main-nav {
    display: block;
-    
-    border-bottom: 1px solid #ececec;
 
     @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
 }
 .logotype {
     @media screen and (max-width: 767px) {
-              margin: 16px 0;
-          }
+            padding: 16px 0;
+         }
 }
           
 .logo__basic {
@@ -40,19 +45,23 @@
 .menu-nav {
     display: none;
     z-index: 900;
+     
 
     &.is-open {
         display: block;
     }
 
     @media screen and (max-width: 767px) {
-    position: absolute;
-    padding: 40px 48px;
-    top: 0%;
-    left: 0%;
-    width: 100%; 
-
-    background-color: $heroTextColor;
+        // position: absolute;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        padding: 40px 48px;
+        top: 0%;
+        left: 0%;
+        overflow-y: scroll;
+        
+        background-color: $heroTextColor;
     }
 
     @media screen and (min-width: 768px) {
@@ -64,11 +73,11 @@
 /* site nav */
 .site-nav {
 
-font-weight: 500;
-font-size: 40px;
-line-height: 1.17;
-letter-spacing: 0.02em;
-margin-bottom: 302px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    margin-bottom: 302px;
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -134,12 +143,12 @@ margin-bottom: 302px;
 
 /* contacts-nav*/
 .contacts-nav {
-display: flex;
+    display: flex;
 
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
     @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
@@ -173,7 +182,7 @@ letter-spacing: 0.02em;
     }
 }
 .contacts-nav__mail {
-display: flex;
+    display: flex;
     color: $primaryTextColor;
     font-weight: 500;
     font-size: 24px;

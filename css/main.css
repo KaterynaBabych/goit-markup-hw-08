@@ -835,14 +835,14 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(../images/Hero_tablet@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(../images/Hero_tablet@2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(../images/Hero_tablet@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(../images/Hero_tablet@2x.jpg);
@@ -856,14 +856,14 @@ address {
   }
 }
 
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(../images/Hero_desktop@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(../images/Hero_desktop@2x.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.5))), url(../images/Hero_desktop@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)), url(../images/Hero_desktop@2x.jpg);
@@ -939,8 +939,7 @@ address {
   position: relative;
   top: 50%;
   left: 50%;
-  max-width: 450px;
-  width: 100%;
+  width: 450px;
   height: 609px;
   padding: 40px;
   background-color: #ffffff;
@@ -1744,7 +1743,7 @@ address {
 
 .form-footer__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 100%;
+  width: 450px;
   height: 50px;
   border-radius: 4px;
   padding-left: 16px;
